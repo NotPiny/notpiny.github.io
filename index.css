@@ -1,0 +1,29 @@
+:root {
+    --color-primary: #39227d;
+    --color-secondary: #32245C;
+    --color-background: #28262F;
+    --color-text: #F4EDE8;
+}
+
+@import url('https://fonts.cdnfonts.com/css/good-times-2');
+
+body {
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: var(--color-primary);
+    font-family: 'Good Times Rg', sans-serif;
+    font-size: 100px;
+
+    text-align: center;
+}
