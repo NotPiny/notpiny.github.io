@@ -19,6 +19,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
+    padding: 25px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
     background-color: #18181d;
 
     border-radius: 12px;
@@ -30,14 +40,6 @@ h1 {
     color: var(--color-primary);
     font-family: 'Good Times Rg', sans-serif;
     font-size: 100px;
-
-    text-align: center;
-}
-
-p {
-    color: var(--color-text);
-    /* font-family: 'Good Times Rg', sans-serif; */
-    font-size: 20px;
 
     text-align: center;
 }
