@@ -1,6 +1,16 @@
 function OnButtonPressed(button) {
+    function OpenLink(link, target) {
+        const a = document.createElement('a')
+        a.href = link
+
+        a.dispatchEvent(new MouseEvent('click', {
+            view: window,
+            ctrlKey: true
+        }))
+    }
+
     if (button == 'Github') {
-        window.open('https://github.com/NotPiny')
+        OpenLink('https://github.com/NotPiny')
     }
 
     if (button == 'Discord') {
@@ -9,6 +19,6 @@ function OnButtonPressed(button) {
     }
 
     if (button == 'Links') {
-        window.open('https://bit.ly/m/Piny')
+        OpenLink('https://bit.ly/m/Piny')
     }
 }
