@@ -13,6 +13,13 @@
     z-index: 1;
 }
 
+/* Hide navbar by default on mobile */
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+}
+
 .navbar .button {
     background-color: var(--color-secondary);
     border: none;

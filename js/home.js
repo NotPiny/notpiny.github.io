@@ -7,6 +7,8 @@ function OnButtonPressed(button) {
             view: window,
             ctrlKey: true
         }))
+
+        a.remove()
     }
 
     if (button == 'Github') {

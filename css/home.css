@@ -30,6 +30,20 @@ h1 {
 }
 
 /* Buttons */
+.button-caraousel {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
 .button-caraousel .button {
     background-color: var(--color-primary);
     border: none;
@@ -39,7 +53,7 @@ h1 {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    /* margin: 4px 2px; */
     cursor: pointer;
     border-radius: 12px;
 }
