@@ -1,31 +1,26 @@
+/* Import shared css */
+@import url('./shared/root.css');
+@import url('./shared/navbar.css');
+
+/* Import fonts */
 @import url('/fonts/good-times.rg-regular.otf');
 
-:root {
-    --color-primary: #39227d;
-    --color-secondary: #32245C;
-    --color-background: #28262F;
-    --color-text: #F4EDE8;
-}
-
+/* Body */
 body {
     background-color: var(--color-background);
     margin: 0;
     padding: 0;
 }
 
+/* Center */
 .center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    background-color: #18181d;
-
-    border-radius: 12px;
-
-    padding: 25px;
 }
 
+/* Header */
 h1 {
     color: var(--color-primary);
     font-family: 'Good Times Rg', sans-serif;
@@ -34,39 +29,11 @@ h1 {
     text-align: center;
 }
 
+/* Text */
 p {
     color: var(--color-text);
     /* font-family: 'Good Times Rg', sans-serif; */
     font-size: 20px;
 
     text-align: center;
-}
-
-.navbar {
-    background-color: var(--color-primary);
-    
-    height: 50px;
-    width: 100%;
-
-    padding: 25px;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-    z-index: 1;
-}
-
-.navbar .button {
-    background-color: var(--color-secondary);
-    border: none;
-    color: var(--color-text);
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
 }

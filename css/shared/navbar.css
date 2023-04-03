@@ -1,0 +1,38 @@
+.navbar {
+    background-color: var(--color-primary);
+    
+    height: 50px;
+    width: 100%;
+
+    padding: 25px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    z-index: 1;
+}
+
+.navbar .button {
+    background-color: var(--color-secondary);
+    border: none;
+    color: var(--color-text);
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.navbar .button:hover {
+    transition: all .5s ease-in;
+    background-color: var(--color-tertiary);
+}
+
+.navbar .button:not(:hover) {
+    transition: all .5s ease-in;
+    background-color: var(--color-secondary);
+}
